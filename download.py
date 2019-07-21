@@ -14,4 +14,6 @@ data_gambar = []
 for x in semua:
 	data_gambar.append(x['data-src'])
 
-urllib.request.urlretrieve('https://octodex.github.com' + data_gambar[0], '.' + data_gambar[0])
+for x in data_gambar:
+	urllib.request.urlretrieve('https://octodex.github.com' + x, '.' + x)
+	time.sleep(1)

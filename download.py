@@ -7,6 +7,8 @@ url = 'https://octodex.github.com/'
 response = requests.get(url)
 
 soup = BeautifulSoup(response.text, 'html.parser')
-semua = soup.findAll('img.lazy')
+semua = soup.findAll('img', {
+		'class' : 'lazy'
+	})
 
 print(semua)

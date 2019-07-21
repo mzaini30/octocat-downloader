@@ -1,6 +1,6 @@
 import requests
 import urllib.request
-import time
+# import time
 from bs4 import BeautifulSoup
 
 url = 'https://octodex.github.com/'
@@ -17,4 +17,4 @@ for x in semua:
 for x in data_gambar:
 	urllib.request.urlretrieve('https://octodex.github.com' + x, '.' + x)
 	print(x.replace('/images/', '') + ' sudah didownload')
-	time.sleep(1)
+	# time.sleep(1)

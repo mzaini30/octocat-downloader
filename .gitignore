@@ -1,1 +1,5 @@
-gambar
+*.jpg
+*.png
+*.gif
+*.jpeg
+*.ico
